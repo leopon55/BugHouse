@@ -7,8 +7,13 @@ import kotlinx.android.synthetic.main.activity_load.*
 
 class LoadActivity : AppCompatActivity() {
 
+<<<<<<< HEAD
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+=======
+    override fun onDestroy() {
+        super.onDestroy()
+>>>>>>> hotfix
         setContentView(R.layout.activity_load)
 
         val sharedPreferences = getSharedPreferences("SharedPreferences", Context.MODE_PRIVATE)
