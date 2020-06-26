@@ -9,12 +9,13 @@ class SaveActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_load)
+
+        saveButton.setOnClickListener {
+            val text = input.text
+            editor.putString("SAVE", text.toString())
+        }
     }
 
     val sharedPreferences = getSharedPreferences("Second", Context.MODE_PRIVATE)
-    val editor = sharedPreferences.edit()
-    saveButton.setOnClickListener {
-        val text = input.text
-        editor.putString("SAVE", text)
-    }
+    var editor = sharedPreferences.edit()
 }

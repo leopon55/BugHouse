@@ -24,7 +24,7 @@
                 android:id="@+id/countActivityCell"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:description="バグは5コあります"
+                app:description="バグは解決したと思います"
                 app:title="Countアプリ" />
 
             <app.nickname.myoji.bughouse.launcher.LauncherCellView
