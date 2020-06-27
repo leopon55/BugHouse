@@ -22,10 +22,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-<<<<<<< HEAD
 
-=======
->>>>>>> hotfix
     kotlinOptions {
         jvmTarget = '1.8'
     }

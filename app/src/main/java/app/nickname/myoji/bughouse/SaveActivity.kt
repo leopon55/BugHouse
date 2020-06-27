@@ -8,7 +8,6 @@ import kotlinx.android.synthetic.main.activity_save.*
 class SaveActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-<<<<<<< HEAD
         setContentView(R.layout.activity_save)
 
         val sharedPreferences = getSharedPreferences("SharedPreferences", Context.MODE_PRIVATE)
@@ -19,16 +18,4 @@ class SaveActivity : AppCompatActivity() {
             editor.apply()
         }
     }
-=======
-        setContentView(R.layout.activity_load)
-
-        saveButton.setOnClickListener {
-            val text = input.text
-            editor.putString("SAVE", text.toString())
-        }
-    }
-
-    val sharedPreferences = getSharedPreferences("Second", Context.MODE_PRIVATE)
-    var editor = sharedPreferences.edit()
->>>>>>> hotfix
 }
