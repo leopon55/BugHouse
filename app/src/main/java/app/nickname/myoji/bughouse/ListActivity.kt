@@ -30,8 +30,9 @@ class ListActivity : AppCompatActivity() {
         adapter.addAll(taskList)
 
         addButton.setOnClickListener {
-            val name = editText.text.toString()
-//            taskList.add(Task(name))
+            val name:String = editText.text.toString()
+            val addTask = Task(name)
+            taskList.add(addTask)
             adapter.addAll(taskList)
         }
     }
